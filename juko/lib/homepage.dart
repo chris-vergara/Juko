@@ -8,10 +8,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
-        title: Text('Juko'),
-        leading: Icon(Icons.menu),
+        title: const Text('Juko'),
+        leading: const Icon(Icons.menu),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: BottomNavigationBar(items: const [
         BottomNavigationBarItem(
             icon: Icon(Icons.account_circle), label: 'My Account'),
         BottomNavigationBarItem(
@@ -30,8 +30,8 @@ class HomePage extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(40, 0, 15, 20),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(40, 0, 15, 20),
                     child: Text(
                       "Hear the \nMusic \nYou Want.",
                       style: TextStyle(
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                       children: [
                         ElevatedButton(
                           onPressed: () => print('pressed'),
-                          child: Text(
+                          child: const Text(
                             'Start a Jam',
                             style: TextStyle(color: Colors.black87),
                           ),
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(25),
                             ),
-                            padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
+                            padding: const EdgeInsets.fromLTRB(35, 10, 35, 10),
                           ),
                         ),
                         ElevatedButton(
@@ -66,10 +66,10 @@ class HomePage extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25),
                               ),
-                              padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
+                              padding: const EdgeInsets.fromLTRB(35, 10, 35, 10),
                             ),
                             onPressed: () => print('pressed'),
-                            child: Text(
+                            child: const Text(
                               'Join a Jam',
                               style: TextStyle(color: Colors.white),
                             )),
@@ -85,8 +85,8 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 15, 15, 10),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(20, 15, 15, 10),
                   child: Text(
                     'Current Jam Sesh',
                     textAlign: TextAlign.start,
@@ -105,10 +105,10 @@ class HomePage extends StatelessWidget {
                           leading: Image.network(
                             'https://m.media-amazon.com/images/I/71m-8XlvccL._SS500_.jpg',
                           ),
-                          title: Text('Michael Jackson'),
-                          subtitle: Text('P.Y.T'),
+                          title: const Text('Michael Jackson'),
+                          subtitle: const Text('P.Y.T'),
                         ),
-                        FractionallySizedBox(
+                        const FractionallySizedBox(
                           widthFactor: .8,
                           child: LinearProgressIndicator(
                             value: .618,

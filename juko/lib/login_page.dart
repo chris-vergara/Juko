@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:juko/juko_icons.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -31,10 +31,10 @@ class _LoginPageState extends State<LoginPage> {
                     height: 20,
                     child: Image.asset("assets/spotify_logo.png"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text(
+                  const Text(
                     'Sign In & Connect to Spotify',
                     style: TextStyle(color: Colors.black87),
                   ),
